@@ -11,7 +11,7 @@ import { Layout } from './Layout';
 
 export const App = () => {
   return (
-    <Layout className="container">
+    <Layout>
       <Profile
         username={user.username}
         tag={user.tag}

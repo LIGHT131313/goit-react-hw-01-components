@@ -17,25 +17,25 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Wrapper className="profile">
-      <WrapperDesc className="description">
-        <img src={avatar} alt="User avatar" className="avatar" width="160px" />
-        <Name className="name">{username}</Name>
-        <Tag className="tag">@{tag}</Tag>
-        <Location className="location">{location}</Location>
+    <Wrapper>
+      <WrapperDesc>
+        <img src={avatar} alt="User avatar" width="160px" />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
       </WrapperDesc>
-      <List className="stats">
+      <List>
         <li>
-          <ListLabel className="label">Followers</ListLabel>
-          <span className="quantity">{followers}</span>
+          <ListLabel>Followers</ListLabel>
+          <span>{followers}</span>
         </li>
         <li>
-          <ListLabel className="label">Views</ListLabel>
-          <span className="quantity">{views}</span>
+          <ListLabel>Views</ListLabel>
+          <span>{views}</span>
         </li>
         <li>
-          <ListLabel className="label">Likes</ListLabel>
-          <span className="quantity">{likes}</span>
+          <ListLabel>Likes</ListLabel>
+          <span>{likes}</span>
         </li>
       </List>
     </Wrapper>
